@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>
+    Number Guesser
+  </title>
+</head>
+<body>
+  <header>
+    <h1 class="number">
+      Number 
+    </h1>
+    <h1 class="guesser">
+      Guesser
+    </h1>
+  </header>
+  <form action="">
+    <input type="text" class="number-guess" id="number-guess" placeholder="Enter your guess">
+    <button class="guess" id="guess" disabled="true">
+      Guess
+    </button>
+    <button class="clear" disabled="true" id="clear">
+     Clear
+   </button>
+    <p class="last-guess">
+    </p>
+    <p class="recent-guess">
+    </p>
+    <p class="results">
+      Enter a number between 1 and 100 <!-- <span id="min"></span>and<span id="max"></span> -->
+    </p>
+    <input type="submit" value="Reset" class="reset" disabled="true" id="reset">
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
