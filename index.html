@@ -2,33 +2,25 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>
-    Number Guesser
-  </title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  <title>Number Guesser</title>
 </head>
 <body>
   <header>
-    <h1 class="number">
-      Number 
-    </h1>
-    <h1 class="guesser">
-      Guesser
-    </h1>
+    <h1 class="number">Number</h1>
+    <h1 class="guesser">Guesser</h1>
   </header>
-  <form action="">
+  <form>
+    <input type="number" id="min" placeholder="min">
+    <input type="number" id="max" placeholder="max">
+    <input type="submit" id="submit" disabled="true">
     <input type="text" class="number-guess" id="number-guess" placeholder="Enter your guess">
-    <button class="guess" id="guess" disabled="true">
-      Guess
-    </button>
-    <button class="clear" disabled="true" id="clear">
-     Clear
-   </button>
-    <p class="last-guess">
-    </p>
-    <p class="recent-guess">
-    </p>
+    <button class="guess" id="guess" disabled="true">Guess</button>
+    <button class="clear" disabled="true" id="clear">Clear</button>
+    <p class="last-guess"></p>
+    <p class="recent-guess"></p>
     <p class="results">
-      Enter a number between 1 and 100 <!-- <span id="min"></span>and<span id="max"></span> -->
+      Guess a number between&nbsp;<span id="min-text">1</span>&nbsp;and&nbsp;<span id="max-text">100</span>
     </p>
     <input type="submit" value="Reset" class="reset" disabled="true" id="reset">
   </form>

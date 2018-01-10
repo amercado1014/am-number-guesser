@@ -3,7 +3,7 @@
 *:before {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Opens Sans", sans-serif;
+  /*font-family: "Opens Sans", sans-serif;*/
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 
 header {
   background-color: #404041;
-  margin-bottom: 45px;
+  margin-bottom: -27px;
 }
 
 h1 {
@@ -31,7 +31,15 @@ h1 {
   font-weight: 300;
 }
 
-.number-guess{
+#min, 
+#max {
+  height: 39px;
+  width: 83px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.number-guess {
   margin: auto;
   height: 39px;
   width: 352px;
@@ -39,20 +47,16 @@ h1 {
   display: block;
 }
 
-::-webkit-input-placeholder { 
-  color: #d0d2d3;
-}
-:-ms-input-placeholder { 
-  color: #d0d2d3;
-}
-::-moz-placeholder { 
-  color: #d0d2d3;
-}
-:-moz-placeholder { 
+::-webkit-input-placeholder,
+:-ms-input-placeholder,
+::-moz-placeholder,
+ :-moz-placeholder { 
   color: #d0d2d3;
 }
 
-.guess, .clear {
+.guess, 
+.clear, 
+#submit {
   background-color: #929497;
   color: #ffffff;
   height: 42px;
@@ -63,11 +67,17 @@ h1 {
   margin: 45px 10px 0 10px;
 }
 
-.guess:hover, .clear:hover, .reset:hover {
+.guess:hover, 
+.clear:hover, 
+.reset:hover, 
+#submit:hover {
   background-color: #eb008b;
 }
 
-.clear:disabled, .reset:disabled, .guess:disabled {
+.clear:disabled, 
+.reset:disabled, 
+.guess:disabled, 
+#submit:disabled {
   background-color: #d0d2d3;
 }
 
